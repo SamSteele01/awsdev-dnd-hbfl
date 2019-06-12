@@ -34,5 +34,5 @@ function terminateInstance (instanceId) {
 
 // listInstances()
 // .then(data => console.log(data))
-terminateInstance('i-08c7f74458e57c5e5')
+terminateInstance('i-02e6c1bb6477d8ce2')
 .then(data => console.log(data))

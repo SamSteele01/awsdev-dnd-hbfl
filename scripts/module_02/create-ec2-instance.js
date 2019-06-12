@@ -6,8 +6,8 @@ AWS.config.update({ region: 'us-east-1' });
 
 // Declare local variables
 const ec2 = new AWS.EC2();
-const sgName = 'hamster_sg_bn'
-const keyName = 'hamster_key_bn'
+const sgName = 'hamster_sg_bn2'
+const keyName = 'hamster_key_bn2'
 
 // Do all the things together
 createSecurityGroup(sgName)
@@ -101,7 +101,7 @@ function createInstance (sgName, keyName) {
     SecurityGroups: [
       sgName
     ],
-    UserData: 'IyEvYmluL2Jhc2gKc3VkbyBhcHQtZ2V0IHVwZGF0ZQpzdWRvIGFwdC1nZXQgLXkgaW5zdGFsbCBnaXQKZ2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9yeWFubXVyYWthbWkvaGJmbC5naXQKY2QgaGJmbApzdWRvIG5wbSBpCnN1ZG8gbnBtIHJ1biBzdGFydA=='
+    UserData: 'IyEvYmluL2Jhc2gKc3VkbyBhcHQtZ2V0IHVwZGF0ZQpzdWRvIGFwdC1nZXQgLXkgaW5zdGFsbCBnaXQKZ2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9TYW1TdGVlbGUwMS9hd3NkZXYtZG5kLWhiZmwuZ2l0IGhiZmwKY2QgaGJmbApzdWRvIG5wbSBpCnN1ZG8gbnBtIHJ1biBzdGFydAoK'
   }
   
   return new Promise((resolve, reject) => {
