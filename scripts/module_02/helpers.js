@@ -3,6 +3,7 @@ const path = require('path')
 const os = require('os')
 
 function persistKeyPair (keyData) {
+  console.log('KEYDATA', keyData);
   return new Promise((resolve, reject) => {
     const keyPath = path.join(os.homedir(), '.ssh', keyData.KeyName)
     const options = {
