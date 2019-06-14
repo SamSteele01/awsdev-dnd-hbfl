@@ -32,7 +32,7 @@ function terminateInstance (instanceId) {
   });
 }
 
-// listInstances()
-// .then(data => console.log(data))
-terminateInstance('i-02e6c1bb6477d8ce2')
+listInstances()
 .then(data => console.log(data))
+// terminateInstance('i-031aaa3f850dcc01b')
+// .then(data => console.log(data))
